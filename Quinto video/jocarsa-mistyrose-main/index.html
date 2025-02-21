@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="jocarsa_mistyrose.css" />
+    <script defer src="jocarsa_mistyrose.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generador de Gráficas Dinámicas</title>
+  <style>
+    /* Estilos para el formulario y contenedores de gráficas */
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    #chart-form, #partsFields {
+      margin: 10px 0;
+    }
+    #partsFields div {
+      margin-bottom: 5px;
+    }
+    button {
+      margin-top: 10px;
+      padding: 5px 10px;
+    }
+    .chart-container {
+      margin: 20px 0;
+    }
+  </style>
+</head>
+<body>
+  <!-- Formulario para definir la cantidad de partes y sus valores -->
+  <div id="chart-form">
+    <label for="partsCount">¿Cuántas partes tiene esta gráfica?</label>
+    <input type="number" id="partsCount" min="1" value="3">
+    <button id="generateFields">Generar campos</button>
+  </div>
+
+  <!-- Contenedor donde se agregarán los inputs para cada trozo -->
+  <div id="partsFields"></div>
+
+  <!-- Botón para crear las gráficas -->
+  <button id="createGraph">Crear gráfica</button>
+
+  <!-- Contenedores para las gráficas -->
+  <div class="chart-container" id="pieChartContainer"></div>
+  <div class="chart-container" id="barChartContainer"></div>
+</body>
+</html>

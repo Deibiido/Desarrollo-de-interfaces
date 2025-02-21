@@ -1,0 +1,10 @@
+ .jocarsa-mistyrose {
+   display: flex;
+   align-items: center;
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+   border-radius: 8px;
+   background-color: #fff;
+   padding: 20px;
+   width: 500px;
+	margin: 20px;
+}
